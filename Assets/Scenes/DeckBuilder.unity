@@ -659,6 +659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405}
   - component: {fileID: 406}
+  - component: {fileID: 407}
   m_Layer: 5
   m_Name: CampaignLabel
   m_IsActive: 1
@@ -734,6 +735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 415}
   - component: {fileID: 416}
+  - component: {fileID: 417}
   m_Layer: 5
   m_Name: Card LibraryLabel
   m_IsActive: 1
@@ -809,6 +811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425}
   - component: {fileID: 426}
+  - component: {fileID: 427}
   m_Layer: 5
   m_Name: Deck BuilderLabel
   m_IsActive: 1
