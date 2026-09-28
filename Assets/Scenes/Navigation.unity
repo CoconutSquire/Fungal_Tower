@@ -290,10 +290,14 @@ RectTransform:
   m_GameObject: {fileID: 263637109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1752408980}
+  - {fileID: 300}
+  - {fileID: 400}
+  - {fileID: 410}
+  - {fileID: 420}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -565,11 +569,286 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+
+--- !u!1 &300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 301}
+  - component: {fileID: 302}
+  - component: {fileID: 303}
+  m_Layer: 5
+  m_Name: NavigationTitle
+  m_IsActive: 1
+--- !u!224 &301
+RectTransform:
+  m_GameObject: {fileID: 300}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 330}
+  m_SizeDelta: {x: 1400, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Father: {fileID: 263637113}
+--- !u!222 &302
+CanvasRenderer:
+  m_GameObject: {fileID: 300}
+--- !u!114 &303
+MonoBehaviour:
+  m_GameObject: {fileID: 300}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_text: Fungal Tower
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSize: 56
+  m_alignment: 514
+  m_color: {r: 1, g: 1, b: 1, a: 1}
+
+--- !u!1 &400
+GameObject:
+  m_Component:
+  - component: {fileID: 401}
+  - component: {fileID: 402}
+  - component: {fileID: 403}
+  m_Layer: 5
+  m_Name: Campaign
+  m_IsActive: 1
+--- !u!224 &401
+RectTransform:
+  m_GameObject: {fileID: 400}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 100}
+  m_SizeDelta: {x: 520, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Father: {fileID: 263637113}
+--- !u!114 &402
+MonoBehaviour:
+  m_GameObject: {fileID: 400}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Color: {r: 0.16, g: 0.42, b: 0.27, a: 1}
+--- !u!114 &403
+MonoBehaviour:
+  m_GameObject: {fileID: 400}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_TargetGraphic: {fileID: 402}
+  m_Transition: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 500}
+        m_TargetAssemblyTypeName: FungalTower.Game.Navigation.SceneNavigator, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Campaign
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &404
+GameObject:
+  m_Component:
+  - component: {fileID: 405}
+  - component: {fileID: 406}
+  m_Layer: 5
+  m_Name: CampaignLabel
+  m_IsActive: 1
+--- !u!224 &405
+RectTransform:
+  m_GameObject: {fileID: 404}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_Father: {fileID: 401}
+--- !u!222 &406
+CanvasRenderer:
+  m_GameObject: {fileID: 404}
+--- !u!114 &407
+MonoBehaviour:
+  m_GameObject: {fileID: 404}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_text: Campaign
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSize: 32
+  m_alignment: 514
+  m_color: {r: 1, g: 1, b: 1, a: 1}
+
+--- !u!1 &410
+GameObject:
+  m_Component:
+  - component: {fileID: 411}
+  - component: {fileID: 412}
+  - component: {fileID: 413}
+  m_Layer: 5
+  m_Name: CardLibrary
+  m_IsActive: 1
+--- !u!224 &411
+RectTransform:
+  m_GameObject: {fileID: 410}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: 520, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Father: {fileID: 263637113}
+--- !u!114 &412
+MonoBehaviour:
+  m_GameObject: {fileID: 410}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Color: {r: 0.16, g: 0.42, b: 0.27, a: 1}
+--- !u!114 &413
+MonoBehaviour:
+  m_GameObject: {fileID: 410}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_TargetGraphic: {fileID: 412}
+  m_Transition: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 500}
+        m_TargetAssemblyTypeName: FungalTower.Game.Navigation.SceneNavigator, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CardLibrary
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &414
+GameObject:
+  m_Component:
+  - component: {fileID: 415}
+  - component: {fileID: 416}
+  m_Layer: 5
+  m_Name: Card LibraryLabel
+  m_IsActive: 1
+--- !u!224 &415
+RectTransform:
+  m_GameObject: {fileID: 414}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_Father: {fileID: 411}
+--- !u!222 &416
+CanvasRenderer:
+  m_GameObject: {fileID: 414}
+--- !u!114 &417
+MonoBehaviour:
+  m_GameObject: {fileID: 414}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_text: Card Library
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSize: 32
+  m_alignment: 514
+  m_color: {r: 1, g: 1, b: 1, a: 1}
+
+--- !u!1 &420
+GameObject:
+  m_Component:
+  - component: {fileID: 421}
+  - component: {fileID: 422}
+  - component: {fileID: 423}
+  m_Layer: 5
+  m_Name: DeckBuilder
+  m_IsActive: 1
+--- !u!224 &421
+RectTransform:
+  m_GameObject: {fileID: 420}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -140}
+  m_SizeDelta: {x: 520, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Father: {fileID: 263637113}
+--- !u!114 &422
+MonoBehaviour:
+  m_GameObject: {fileID: 420}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Color: {r: 0.16, g: 0.42, b: 0.27, a: 1}
+--- !u!114 &423
+MonoBehaviour:
+  m_GameObject: {fileID: 420}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_TargetGraphic: {fileID: 422}
+  m_Transition: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 500}
+        m_TargetAssemblyTypeName: FungalTower.Game.Navigation.SceneNavigator, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DeckBuilder
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &424
+GameObject:
+  m_Component:
+  - component: {fileID: 425}
+  - component: {fileID: 426}
+  m_Layer: 5
+  m_Name: Deck BuilderLabel
+  m_IsActive: 1
+--- !u!224 &425
+RectTransform:
+  m_GameObject: {fileID: 424}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_Father: {fileID: 421}
+--- !u!222 &426
+CanvasRenderer:
+  m_GameObject: {fileID: 424}
+--- !u!114 &427
+MonoBehaviour:
+  m_GameObject: {fileID: 424}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_text: Deck Builder
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSize: 32
+  m_alignment: 514
+  m_color: {r: 1, g: 1, b: 1, a: 1}
+
+--- !u!1 &500
+GameObject:
+  m_Component:
+  - component: {fileID: 501}
+  m_Name: SceneNavigator
+  m_IsActive: 1
+--- !u!4 &501
+Transform:
+  m_GameObject: {fileID: 500}
+  m_Children: []
+--- !u!114 &502
+MonoBehaviour:
+  m_GameObject: {fileID: 500}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 1234567890abcdef1234567890abcdef, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
-  m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1624559568}
   - {fileID: 2123628313}
   - {fileID: 263637113}
   - {fileID: 35530987}
+  - {fileID: 500}
