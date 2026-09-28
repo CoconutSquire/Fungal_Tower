@@ -829,7 +829,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 424}
   m_Enabled: 1
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_text: Deck Builder
+  m_text: Back to Navigation
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSize: 32
   m_alignment: 514
