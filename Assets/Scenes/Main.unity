@@ -565,11 +565,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+
+--- !u!1 &910
+GameObject:
+  m_Component:
+  - component: {fileID: 911}
+  - component: {fileID: 912}
+  - component: {fileID: 913}
+  - component: {fileID: 914}
+  m_Layer: 5
+  m_Name: EnterNavigation
+  m_IsActive: 1
+--- !u!224 &911
+RectTransform:
+  m_GameObject: {fileID: 910}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -280}
+  m_SizeDelta: {x: 520, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Father: {fileID: 263637113}
+--- !u!222 &912
+CanvasRenderer:
+  m_GameObject: {fileID: 910}
+--- !u!114 &913
+MonoBehaviour:
+  m_GameObject: {fileID: 910}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Color: {r: .16, g: .42, b: .27, a: 1}
+--- !u!114 &914
+MonoBehaviour:
+  m_GameObject: {fileID: 910}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_TargetGraphic: {fileID: 913}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 920}
+        m_TargetAssemblyTypeName: FungalTower.Game.Navigation.SceneNavigator, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Navigation
+          m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &915
+GameObject:
+  m_Component:
+  - component: {fileID: 916}
+  - component: {fileID: 917}
+  m_Layer: 5
+  m_Name: EnterNavigationLabel
+  m_IsActive: 1
+--- !u!224 &916
+RectTransform:
+  m_GameObject: {fileID: 915}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_Father: {fileID: 911}
+--- !u!222 &917
+CanvasRenderer:
+  m_GameObject: {fileID: 915}
+--- !u!114 &918
+MonoBehaviour:
+  m_GameObject: {fileID: 915}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_text: Enter Tower
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSize: 32
+  m_alignment: 514
+  m_color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &920
+GameObject:
+  m_Component:
+  - component: {fileID: 921}
+  m_Name: SceneNavigator
+  m_IsActive: 1
+--- !u!4 &921
+Transform:
+  m_GameObject: {fileID: 920}
+  m_Children: []
+--- !u!114 &922
+MonoBehaviour:
+  m_GameObject: {fileID: 920}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 1234567890abcdef1234567890abcdef, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
-  m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1624559568}
-  - {fileID: 2123628313}
+  - {fileID: 1752408979}
+  - {fileID: 2123628311}
   - {fileID: 263637113}
-  - {fileID: 35530987}
+  - {fileID: 910}
+  - {fileID: 920}
