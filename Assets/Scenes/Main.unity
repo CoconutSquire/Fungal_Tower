@@ -620,6 +620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 916}
   - component: {fileID: 917}
+  - component: {fileID: 918}
   m_Layer: 5
   m_Name: EnterNavigationLabel
   m_IsActive: 1
@@ -660,8 +661,9 @@ MonoBehaviour:
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_Roots:
+  - {fileID: 35530984}
+  - {fileID: 263637113}
   - {fileID: 1752408979}
   - {fileID: 2123628311}
-  - {fileID: 263637113}
   - {fileID: 910}
   - {fileID: 920}
