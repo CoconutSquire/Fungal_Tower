@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   cardItems: []
-  ownershipLabel: {fileID: 101}
-  rarityLabel: {fileID: 201}
-  typeLabel: {fileID: 301}
+  ownershipLabel: {fileID: 35}
+  rarityLabel: {fileID: 45}
+  typeLabel: {fileID: 55}
   ownershipFilter: 0
   rarityFilter: 0
   typeFilter: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2}
+      - m_Target: {fileID: 6}
         m_TargetAssemblyTypeName: FungalTower.Game.UI.CardLibraryController, Assembly-CSharp
         m_MethodName: CycleOwnershipFilter
         m_Mode: 1
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2}
+      - m_Target: {fileID: 6}
         m_TargetAssemblyTypeName: FungalTower.Game.UI.CardLibraryController, Assembly-CSharp
         m_MethodName: CycleRarityFilter
         m_Mode: 1
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2}
+      - m_Target: {fileID: 6}
         m_TargetAssemblyTypeName: FungalTower.Game.UI.CardLibraryController, Assembly-CSharp
         m_MethodName: CycleTypeFilter
         m_Mode: 1
@@ -1373,7 +1373,7 @@ MonoBehaviour:
       - m_Target: {fileID: 600}
         m_TargetAssemblyTypeName: FungalTower.Game.UI.CardLibraryController, Assembly-CSharp
         m_MethodName: LoadScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
