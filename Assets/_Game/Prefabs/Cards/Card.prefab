@@ -31,12 +31,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 100010}
-  - {fileID: 100020}
-  - {fileID: 100030}
-  - {fileID: 100040}
-  - {fileID: 100050}
-  - {fileID: 100060}
-  - {fileID: 100070}
+  - {fileID: 100031}
+  - {fileID: 100041}
+  - {fileID: 100051}
+  - {fileID: 100061}
+  - {fileID: 100071}
+  - {fileID: 100081}
+  - {fileID: 100091}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
