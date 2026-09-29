@@ -17,6 +17,8 @@ namespace FungalTower.Game.UI
         [SerializeField] private TMP_Text energyCostText;
         [SerializeField] private TMP_Text damageText;
         [SerializeField] private TMP_Text blockText;
+        [SerializeField] private TMP_Text rarityText;
+        [SerializeField] private TMP_Text typeText;
 
         public CardData Data => cardData;
 
@@ -43,6 +45,8 @@ namespace FungalTower.Game.UI
             if (energyCostText != null) energyCostText.text = cardData.energyCost.ToString();
             if (damageText != null) damageText.text = cardData.damage > 0 ? cardData.damage.ToString() : string.Empty;
             if (blockText != null) blockText.text = cardData.block > 0 ? cardData.block.ToString() : string.Empty;
+            if (rarityText != null) rarityText.text = cardData.rarity.ToString();
+            if (typeText != null) typeText.text = cardData.type.ToString();
         }
     }
 }
