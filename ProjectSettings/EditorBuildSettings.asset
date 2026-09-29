@@ -7,20 +7,23 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Main.unity
-    guid: 55e160d24066801d27263dcc1900436fc7928101
+    guid: fed6ebf47ab4ed94c8d0f3f0af9e8279
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 9cf1e81b6d0f2524bbfce35556fa56fd
   - enabled: 1
     path: Assets/Scenes/Navigation.unity
-    guid: ea063ef0119e3e7187435aeb8834dd7154b3b04f
-  - enabled: 1
-    path: Assets/Scenes/Campaign.unity
-    guid: a11111111111111111111111111111111
-  - enabled: 1
-    path: Assets/Scenes/CardLibrary.unity
-    guid: b22222222222222222222222222222222
+    guid: abb08d438e3d78b4989c48f9e6b09341
   - enabled: 1
     path: Assets/Scenes/DeckBuilder.unity
-    guid: c33333333333333333333333333333333
+    guid: 339eabca1fbd9b648b6ff59c28528f7d
+  - enabled: 1
+    path: Assets/Scenes/CardLibrary.unity
+    guid: 1100b1fdfc99aa14e8d54963f52402f8
+  - enabled: 1
+    path: Assets/Scenes/Campaign.unity
+    guid: 7d8fce611657f9847bf967344c994b6d
   - enabled: 1
     path: Assets/Scenes/Battle.unity
-    guid: d44444444444444444444444444444444
+    guid: a91ec5fe5cabe584a905a5852ec97f24
   m_configObjects: {}
