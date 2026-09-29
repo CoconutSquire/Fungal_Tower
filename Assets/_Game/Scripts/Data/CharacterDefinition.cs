@@ -33,37 +33,13 @@ namespace FungalTower.Game.Data
         [Min(0)] public int defense = 0;
         [Min(0)] public int speed = 5;
 
-        [Header("Passive Skill")]
-        [Tooltip("Name of the character's passive skill.")]
-        public string passiveSkillName = "Passive Skill";
+        [Header("Passive")]
+        [Tooltip("Name of the character's passive ability.")]
+        public string passiveName = "Passive";
 
         [TextArea(2, 6)]
-        [Tooltip("Description of the character's passive skill.")]
-        public string passiveSkillDescription;
-
-        [Header("Signature Skill")]
-        [Tooltip("Name of the character's signature skill.")]
-        public string signatureSkillName = "Signature Skill";
-
-        [TextArea(2, 6)]
-        [Tooltip("Description of the character's signature skill.")]
-        public string signatureSkillDescription;
-
-        [Min(0)]
-        [Tooltip("Turn cooldown before this character's signature skill can be used again.")]
-        public int signatureCooldownTurns = 3;
-
-        [Header("Ultimate")]
-        [Tooltip("Name of the character's ultimate.")]
-        public string ultimateName = "Ultimate";
-
-        [TextArea(2, 6)]
-        [Tooltip("Description of the character's ultimate.")]
-        public string ultimateDescription;
-
-        [Min(1)]
-        [Tooltip("Energy required to use the ultimate.")]
-        public int ultimateEnergyRequired = 100;
+        [Tooltip("Description of the character's passive ability.")]
+        public string passiveDescription;
 
         [Header("Starting Relic")]
         [Tooltip("Optional starting relic identifier. This remains editor-authored until a dedicated RelicData asset type is added.")]
