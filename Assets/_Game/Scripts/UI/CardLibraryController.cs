@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 using FungalTower.Game.Data;
 
 namespace FungalTower.Game.UI
@@ -12,6 +13,11 @@ namespace FungalTower.Game.UI
         [Header("Editor-Authored Cards")]
         [Tooltip("Optional explicit list. When empty, CardLibraryItem components under Content are discovered automatically.")]
         [SerializeField] private CardLibraryItem[] cardItems;
+
+        [Header("Filter Labels")]
+        [SerializeField] private TMP_Text ownershipLabel;
+        [SerializeField] private TMP_Text rarityLabel;
+        [SerializeField] private TMP_Text typeLabel;
 
         [Header("Current Filters")]
         [SerializeField] private OwnershipFilter ownershipFilter = OwnershipFilter.All;
@@ -49,6 +55,21 @@ namespace FungalTower.Game.UI
             RefreshItems();
         }
 
+        public void CycleOwnershipFilter()
+        {
+            SetOwnershipFilter(((int)ownershipFilter + 1) % 3);
+        }
+
+        public void CycleRarityFilter()
+        {
+            SetRarityFilter(((int)rarityFilter + 1) % 5);
+        }
+
+        public void CycleTypeFilter()
+        {
+            SetTypeFilter(((int)typeFilter + 1) % 4);
+        }
+
         public void ClearFilters()
         {
             ownershipFilter = OwnershipFilter.All;
@@ -59,6 +80,8 @@ namespace FungalTower.Game.UI
 
         public void RefreshItems()
         {
+            UpdateFilterLabels();
+
             if (cardItems == null || cardItems.Length == 0)
                 cardItems = GetComponentsInChildren<CardLibraryItem>(true);
 
@@ -75,6 +98,13 @@ namespace FungalTower.Game.UI
 
                 item.gameObject.SetActive(visible);
             }
+        }
+
+        private void UpdateFilterLabels()
+        {
+            if (ownershipLabel != null) ownershipLabel.text = "Obtained: " + ownershipFilter;
+            if (rarityLabel != null) rarityLabel.text = "Rarity: " + rarityFilter;
+            if (typeLabel != null) typeLabel.text = "Type: " + typeFilter;
         }
 
         private bool MatchesOwnership(CardLibraryItem item)
