@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardData: {fileID: 11400000, guid: 7b9c2d4e6f8a1b3c5d7e9f1029384756, type: 2}
-  artworkImage: {fileID: 100012}
+  artworkImage: {fileID: 100013}
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}
   energyCostText: {fileID: 0}
