@@ -18,6 +18,13 @@ namespace FungalTower.Game.Data
         [Header("Basic Effect Values")]
         public int damage;
         public int block;
+        public int shield;
+        public int heal;
+        public int draw;
+        public int power;
+        public int burn;
+        public int poison;
+        
     }
 
     public enum CardRarity { Common, Uncommon, Rare, Special }

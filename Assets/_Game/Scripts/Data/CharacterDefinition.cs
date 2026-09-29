@@ -14,8 +14,8 @@ namespace FungalTower.Game.Data
         [Tooltip("Character description shown in character information UI.")]
         public string description;
 
-        public CharacterRarity rarity = CharacterRarity.Common;
-        public CharacterClass characterClass = CharacterClass.Generalist;
+        
+        public CharacterClass characterClass = CharacterClass.Warrior;
         public CharacterRole role = CharacterRole.Damage;
         public CharacterBiome biome = CharacterBiome.Forest;
 
@@ -50,18 +50,11 @@ namespace FungalTower.Game.Data
         public List<CardData> startingDeck = new List<CardData>();
     }
 
-    public enum CharacterRarity
-    {
-        Common,
-        Uncommon,
-        Rare,
-        Elite,
-        Legendary
-    }
+    
 
     public enum CharacterClass
     {
-        Generalist,
+        
         Warrior,
         Defender,
         Rogue,
@@ -85,6 +78,6 @@ namespace FungalTower.Game.Data
         Swamp,
         Mountain,
         Ruins,
-        Fungal
+        
     }
 }
