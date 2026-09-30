@@ -13,7 +13,7 @@ namespace FungalTower.Game.UI
         [SerializeField] private TMP_Text detailText;
         [SerializeField] private Button closeButton;
 
-        public string Show(CardData data)
+        public void Show(CardData data)
         {
             if (panelRoot != null) panelRoot.SetActive(true);
             if (cardView != null) cardView.SetData(data);
