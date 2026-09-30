@@ -19,6 +19,9 @@ namespace FungalTower.Game.UI
         [SerializeField] private TMP_Text rarityLabel;
         [SerializeField] private TMP_Text typeLabel;
 
+        [Header("Inspection")]
+        [SerializeField] private CardInspectPanel inspectPanel;
+
         [Header("Current Filters")]
         [SerializeField] private OwnershipFilter ownershipFilter = OwnershipFilter.All;
         [SerializeField] private RarityFilter rarityFilter = RarityFilter.All;
@@ -35,6 +38,18 @@ namespace FungalTower.Game.UI
                 return;
 
             RefreshItems();
+        }
+
+        public void Inspect(CardLibraryItem item)
+        {
+            if (inspectPanel != null && item != null)
+                inspectPanel.Show(item.Data);
+        }
+
+        public void CloseInspection()
+        {
+            if (inspectPanel != null)
+                inspectPanel.Hide();
         }
 
         public void SetOwnershipFilter(int value)
