@@ -8,7 +8,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_Name: Example_Spore_Burst
   m_EditorClassIdentifier:
-  m_Script: {fileID: 11500000, guid: 7b7f4b8c9d0e1a2b3c4d5e6f708192a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d3a8f2c6e1b4a5f9c0d2e7b8a6f1c3d, type: 3}
   cardName: Spore Burst
   description: Deal damage and apply a defensive spore shield. This example demonstrates how to fill out a card's identity, cost, classification, and effect values.
   artwork: {fileID: -4255879429831275893, guid: e10966c01b56e664f9fa6decf10017d9, type: 3}
