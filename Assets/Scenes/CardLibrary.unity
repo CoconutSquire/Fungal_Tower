@@ -1674,8 +1674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   panelRoot: {fileID: 900}
   cardView: {fileID: 911}
-  detailText: {fileID: 9202}
-  closeButton: {fileID: 9302}
+  detailText: {fileID: 9203}
+  closeButton: {fileID: 9304}
 --- !u!1660057539 &999999
 SceneRoots:
   m_ObjectHideFlags: 0
