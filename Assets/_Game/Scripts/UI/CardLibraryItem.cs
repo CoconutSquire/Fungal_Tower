@@ -16,6 +16,13 @@ namespace FungalTower.Game.UI
         public bool Obtained => obtained;
         public CardData Data => cardView != null ? cardView.Data : null;
 
+        public void Inspect()
+        {
+            var library = GetComponentInParent<CardLibraryController>();
+            if (library != null)
+                library.Inspect(this);
+        }
+
         public void SetObtained(bool value)
         {
             obtained = value;
