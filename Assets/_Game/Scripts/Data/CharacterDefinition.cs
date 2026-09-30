@@ -48,6 +48,10 @@ namespace FungalTower.Game.Data
         [Header("Starting Deck")]
         [Tooltip("Cards included in this character's starting deck. Add CardData assets here in the desired decklist.")]
         public List<CardData> startingDeck = new List<CardData>();
+
+        [Header("Curated Decks")]
+        [Tooltip("Decks this character can select in the Deck Builder and Battle loadout selector.")]
+        public List<CharacterDeckDefinition> availableDecks = new List<CharacterDeckDefinition>();
     }
 
     
