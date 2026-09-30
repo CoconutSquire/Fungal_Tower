@@ -10,7 +10,7 @@ OcclusionCullingSettings:
     backfaceThreshold: 100
   m_SceneGUID: 00000000000000000000000000000000
   m_OcclusionCullingData: {fileID: 0}
---- !u!104 &2
+--- !u!104 &1002
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
@@ -461,7 +461,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 35}
+  - component: {fileID: 1035}
   - component: {fileID: 35}
   m_Layer: 5
   m_Name: Label
@@ -470,7 +470,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &35
+--- !u!224 &1035
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -707,7 +707,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 45}
+  - component: {fileID: 1045}
   - component: {fileID: 45}
   m_Layer: 5
   m_Name: Label
@@ -716,7 +716,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &45
+--- !u!224 &1045
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -953,7 +953,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 55}
+  - component: {fileID: 1055}
   - component: {fileID: 55}
   m_Layer: 5
   m_Name: Label
@@ -962,7 +962,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &55
+--- !u!224 &1055
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1393,7 +1393,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 95}
+  - component: {fileID: 1095}
   - component: {fileID: 95}
   m_Layer: 5
   m_Name: Label
@@ -1402,7 +1402,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &95
+--- !u!224 &1095
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1676,16 +1676,6 @@ MonoBehaviour:
   cardView: {fileID: 911}
   detailText: {fileID: 9203}
   closeButton: {fileID: 9304}
---- !u!1660057539 &999999
-SceneRoots:
-  m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 3}
-  - {fileID: 501}
-  - {fileID: 601}
-  - {fileID: 701}
-  - {fileID: 900}
-
 --- !u!1001 &83
 PrefabInstance:
   m_ObjectHideFlags: 0
