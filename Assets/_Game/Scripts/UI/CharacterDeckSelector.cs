@@ -10,6 +10,7 @@ namespace FungalTower.Game.UI
     {
         [Header("Editor-Authored Options")]
         [SerializeField] private CharacterDefinition[] characters;
+        [SerializeField] private CharacterDeckDefinition[] decks;
 
         [Header("Dropdowns")]
         [SerializeField] private TMP_Dropdown characterDropdown;
@@ -79,10 +80,10 @@ namespace FungalTower.Game.UI
             SelectedCharacter = characters[index];
             currentDecks.Clear();
 
-            if (SelectedCharacter != null && SelectedCharacter.availableDecks != null)
+            if (SelectedCharacter != null && decks != null)
             {
-                foreach (var deck in SelectedCharacter.availableDecks)
-                    if (deck != null)
+                foreach (var deck in decks)
+                    if (deck != null && deck.character == SelectedCharacter)
                         currentDecks.Add(deck);
             }
 
