@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Example_Spore_Burst
+  m_EditorClassIdentifier:
+  m_Script: {fileID: 11500000, guid: 7b7f4b8c9d0e1a2b3c4d5e6f708192a3, type: 3}
+  cardName: Spore Burst
+  description: Deal damage and apply a defensive spore shield. This example demonstrates how to fill out a card's identity, cost, classification, and effect values.
+  artwork: {fileID: -4255879429831275893, guid: e10966c01b56e664f9fa6decf10017d9, type: 3}
+  energyCost: 2
+  rarity: 1
+  type: 1
+  damage: 8
+  block: 4
+  shield: 6
+  heal: 0
+  draw: 1
+  power: 0
+  burn: 0
+  poison: 0
