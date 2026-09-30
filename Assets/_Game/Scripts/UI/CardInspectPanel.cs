@@ -13,41 +13,26 @@ namespace FungalTower.Game.UI
         [SerializeField] private TMP_Text detailText;
         [SerializeField] private Button closeButton;
 
-        public void Show(CardData data)
+        public string Show(CardData data)
         {
             if (panelRoot != null) panelRoot.SetActive(true);
             if (cardView != null) cardView.SetData(data);
             if (detailText != null && data != null)
             {
                 detailText.text =
-                    data.cardName + "
-
-" +
-                    data.description + "
-
-" +
-                    "Cost: " + data.energyCost + "
-" +
-                    "Rarity: " + data.rarity + "
-" +
-                    "Type: " + data.type + "
-
-" +
-                    "Damage: " + data.damage + "
-" +
-                    "Block: " + data.block + "
-" +
-                    "Shield: " + data.shield + "
-" +
-                    "Heal: " + data.heal + "
-" +
-                    "Draw: " + data.draw + "
-" +
-                    "Power: " + data.power + "
-" +
-                    "Burn: " + data.burn + "
-" +
-                    "Poison: " + data.poison;
+                    data.cardName + " " +
+                    data.description + " " +
+                    "Cost: " + data.energyCost + " " +
+                    "Rarity: " + data.rarity + " " +
+                    "Type: " + data.type + " " +
+                    "Damage: " + data.damage + " " +
+                    "Block: " + data.block + " " +
+                    "Shield: " + data.shield + " " +
+                    "Heal: " + data.heal + " " +
+                    "Draw: " + data.draw + " " +
+                    "Power: " + data.power + " " +
+                    "Burn: " + data.burn + " " +
+                    "Poison: " + data.poison + " ";
             }
         }
 

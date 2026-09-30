@@ -19,7 +19,7 @@ namespace FungalTower.Game.UI
         [Header("Selection Display")]
         [SerializeField] private TMP_Text selectionText;
 
-        private readonly List<CharacterDeckDefinition> currentDecks = new List<CharacterDeckDefinition>();
+        private readonly List<CharacterDeckDefinition> currentDecks = new();
 
         public CharacterDefinition SelectedCharacter { get; private set; }
         public CharacterDeckDefinition SelectedDeck { get; private set; }
@@ -46,8 +46,7 @@ namespace FungalTower.Game.UI
 
         public void Refresh()
         {
-            if (characters == null)
-                characters = new CharacterDefinition[0];
+            characters ??= new CharacterDefinition[0];
 
             if (characterDropdown != null)
             {
@@ -137,12 +136,10 @@ namespace FungalTower.Game.UI
 
             var deckName = SelectedDeck != null ? SelectedDeck.deckName : "No curated deck";
             selectionText.text =
-                SelectedCharacter.characterName + "
-" +
+                SelectedCharacter.characterName + " " +
                 SelectedCharacter.characterClass + " • " +
                 SelectedCharacter.role + " • " +
-                SelectedCharacter.biome + "
-" +
+                SelectedCharacter.biome + " " +
                 "Deck: " + deckName;
         }
     }

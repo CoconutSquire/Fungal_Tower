@@ -20,8 +20,7 @@ namespace FungalTower.Game.UI
             {
                 characterText.text = character == null
                     ? "Character: None"
-                    : "Character: " + character.characterName + "
-" +
+                    : "Character: " + character.characterName + " " +
                       character.characterClass + " • " +
                       character.role + " • " +
                       character.biome;
@@ -35,8 +34,7 @@ namespace FungalTower.Game.UI
                     return;
                 }
 
-                deckText.text = "Deck: " + deck.deckName + "
-Cards: " +
+                deckText.text = "Deck: " + deck.deckName + " Cards: " +
                     (deck.cards == null ? 0 : deck.cards.Count);
             }
         }
