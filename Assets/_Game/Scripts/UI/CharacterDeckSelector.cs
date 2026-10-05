@@ -137,12 +137,10 @@ namespace FungalTower.Game.UI
 
             var deckName = SelectedDeck != null ? SelectedDeck.deckName : "No curated deck";
             selectionText.text =
-                SelectedCharacter.characterName + "
-" +
+                SelectedCharacter.characterName + " " +
                 SelectedCharacter.characterClass + " • " +
                 SelectedCharacter.role + " • " +
-                SelectedCharacter.biome + "
-" +
+                SelectedCharacter.biome + " " +
                 "Deck: " + deckName;
         }
     }

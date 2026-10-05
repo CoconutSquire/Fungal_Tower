@@ -20,33 +20,18 @@ namespace FungalTower.Game.UI
             if (detailText != null && data != null)
             {
                 detailText.text =
-                    data.cardName + "
-
-" +
-                    data.description + "
-
-" +
-                    "Cost: " + data.energyCost + "
-" +
-                    "Rarity: " + data.rarity + "
-" +
-                    "Type: " + data.type + "
-
-" +
-                    "Damage: " + data.damage + "
-" +
-                    "Block: " + data.block + "
-" +
-                    "Shield: " + data.shield + "
-" +
-                    "Heal: " + data.heal + "
-" +
-                    "Draw: " + data.draw + "
-" +
-                    "Power: " + data.power + "
-" +
-                    "Burn: " + data.burn + "
-" +
+                    data.cardName + " " +
+                    data.description + " " +
+                    "Cost: " + data.energyCost + " " +
+                    "Rarity: " + data.rarity + " " +
+                    "Type: " + data.type + " " +
+                    "Damage: " + data.damage + " " +
+                    "Block: " + data.block + " " +
+                    "Shield: " + data.shield + " " +
+                    "Heal: " + data.heal + " " +
+                    "Draw: " + data.draw + " " +
+                    "Power: " + data.power + " " +
+                    "Burn: " + data.burn + " " +
                     "Poison: " + data.poison;
             }
         }

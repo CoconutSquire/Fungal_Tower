@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 402}
   - component: {fileID: 403}
   - component: {fileID: 408}
+  - component: {fileID: 409}
   m_Layer: 5
   m_Name: Decklist
   m_TagString: Untagged
@@ -292,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 150}
+  m_AnchoredPosition: {x: 339, y: 176}
   m_SizeDelta: {x: 520, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &402
@@ -371,8 +372,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 502}
         m_TargetAssemblyTypeName: FungalTower.Game.Navigation.SceneNavigator, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 0
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -415,7 +416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.415207, y: -15.5}
+  m_AnchoredPosition: {x: -35, y: 3}
   m_SizeDelta: {x: -323.1697, y: -31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &406
@@ -446,9 +447,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Decklist Text
+  m_text: 'Deck: Grovewatch
 
-'
+    Cards: 6'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -528,6 +529,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400}
   m_CullTransparentMesh: 1
+--- !u!114 &409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c5e7a9b1d2f4a6c8e0b3d5f7a9c1e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 100002, guid: 4a6c8e1029384756b7d9f1a3c5e7d9b1, type: 3}
+  deck: {fileID: 11400000, guid: 6b8d1029384756a7c9e1f3d5b7a9c2e4, type: 2}
+  characterText: {fileID: 407}
+  deckText: {fileID: 407}
 --- !u!1 &410
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 150}
+  m_AnchoredPosition: {x: -200, y: -458}
   m_SizeDelta: {x: 520, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412
@@ -1562,22 +1579,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c5e7a9b1d2f4a6c8e0b3d5f7a9c1e2d, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  character: {fileID: 100000, guid: 4a6c8e1029384756b7d9f1a3c5e7d9b1, type: 3}
-  deck: {fileID: 11400000, guid: 6b8d1029384756a7c9e1f3d5b7a9c2e4, type: 2}
-  characterText: {fileID: 407}
-  deckText: {fileID: 407}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
